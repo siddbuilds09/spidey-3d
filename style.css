@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+canvas {
+    display: block;
+}
+
+.header {
+    color: red;
+    font-size: 60px;
+    white-space: nowrap;
+}
+
+.info {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 500px;
+    z-index: 10;
+}
+
+p {
+    font-size: 20px;
+}
