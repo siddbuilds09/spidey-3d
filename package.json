@@ -4,5 +4,25 @@
   },
   "devDependencies": {
     "vite": "^8.1.5"
-  }
+  },
+  "name": "spidey-3d",
+  "version": "1.0.0",
+  "description": "3d spiderman website made with three.js",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddbuilds09/spidey-3d.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/siddbuilds09/spidey-3d/issues"
+  },
+  "homepage": "https://github.com/siddbuilds09/spidey-3d#readme"
 }
