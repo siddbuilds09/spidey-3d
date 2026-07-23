@@ -26,7 +26,7 @@ loader.load("/spiderman.glb", (gltf) => {
 
     model = gltf.scene;
     model.scale.set(2, 2, 2);
-    model.position.set(2, -2, -1)
+    model.position.set(2.7, -2, -1)
 
     const box = new THREE.Box3().setFromObject(model);
     scene.add(model);
