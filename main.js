@@ -44,9 +44,25 @@ loader.load("assets/spiderman.glb", (gltf) => {
 loader.load("assets/marvel.glb", (gltf) => {
     const logo = gltf.scene
     logo.scale.set(0.015, 0.015, 0.015);
-    logo.position.set(-2, -1, 1);
+    logo.position.set(-2, -1.4, -1);
     scene.add(logo)
 })
+
+loader.load("assets/spiderman_symbol_civil_war.glb", (gltf) => {
+    const logo = gltf.scene
+    logo.scale.set(0.015, 0.015, 0.015);
+    logo.position.set(-1, -2.9, -1);
+    logo.rotation.x = Math.PI / 2;
+    scene.add(logo)
+})
+
+loader.load("assets/spiderman-mini.glb", (gltf) => {
+    const logo = gltf.scene
+    logo.scale.set(2, 2, 2);
+    logo.position.set(-2.7, -1.2, 1);
+    scene.add(logo)
+})
+
 
 const starsGeometry = new THREE.BufferGeometry();
 const starscount = 1000;
