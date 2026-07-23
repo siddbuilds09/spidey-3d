@@ -11,7 +11,7 @@ camera.position.set(0, 0, 5);
 const renderer = new THREE.WebGLRenderer();
 
 renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
+document.getElementById("scene").appendChild(renderer.domElement);
 
 const ambientLight = new THREE.AmbientLight(0xffffff, 2);
 scene.add(ambientLight);
@@ -40,6 +40,13 @@ loader.load("assets/spiderman.glb", (gltf) => {
 }, undefined, (error) => {
     console.error(error);
 });
+
+loader.load("assets/marvel.glb", (gltf) => {
+    const logo = gltf.scene
+    logo.scale.set(0.015, 0.015, 0.015);
+    logo.position.set(-2, -1, 1);
+    scene.add(logo)
+})
 
 const starsGeometry = new THREE.BufferGeometry();
 const starscount = 1000;
