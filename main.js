@@ -22,7 +22,7 @@ directionalLight.position.set(5, 5, 5);
 scene.add(directionalLight);
 
 let model;
-loader.load("assets/spiderman.glb", (gltf) => {
+loader.load("/spiderman.glb", (gltf) => {
 
     model = gltf.scene;
     model.scale.set(2, 2, 2);
@@ -41,14 +41,14 @@ loader.load("assets/spiderman.glb", (gltf) => {
     console.error(error);
 });
 
-loader.load("assets/marvel.glb", (gltf) => {
+loader.load("/marvel.glb", (gltf) => {
     const logo = gltf.scene
     logo.scale.set(0.015, 0.015, 0.015);
     logo.position.set(-2, -1.4, -1);
     scene.add(logo)
 })
 
-loader.load("assets/spiderman_symbol_civil_war.glb", (gltf) => {
+loader.load("/spiderman_symbol_civil_war.glb", (gltf) => {
     const logo = gltf.scene
     logo.scale.set(0.015, 0.015, 0.015);
     logo.position.set(-1, -2.9, -1);
@@ -56,7 +56,7 @@ loader.load("assets/spiderman_symbol_civil_war.glb", (gltf) => {
     scene.add(logo)
 })
 
-loader.load("assets/spiderman-mini.glb", (gltf) => {
+loader.load("/spiderman-mini.glb", (gltf) => {
     const logo = gltf.scene
     logo.scale.set(2, 2, 2);
     logo.position.set(-2.7, -1.2, 1);
